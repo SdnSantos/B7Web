@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EVENTOS DE FORMULÁRIOS</title>
+    <script type="text/javascript" src="../js/eventosFormularios.js"></script>
+</head>
+
+<body>
+    <!-- onSubmit vai ser executado ao enviar o formulário -->
+    <form method="POST" onSubmit="">
+        <!-- onFocus quando o cursor está no input esperando a inserção de algo -->
+        <!-- onBlur cursor saiu do input (desfocou) -->
+        <input type="text" name="nome" onFocus="focou()" onBlur="desfocou()"><br><br>
+
+        <!-- onChange ocorre no momento da mudança de opção de options -->
+        <select name="cidade" onChange="mudouOpcao(this)">
+            <option>São Paulo</option>
+            <option>Rio de Janeiro</option>
+            <option>Belo Horizonte</option>
+            <option>Recife</option>
+        </select><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
